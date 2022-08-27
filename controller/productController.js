@@ -1,11 +1,40 @@
-const adminAuth = require('../middleware/adminAuth');
-const auth = require('../middleware/auth');
 const Products = require('../models/productModel');
+
+class APIFeatures {
+    constructor(query, queryString){
+        this.query = query;
+        this.queryString = queryString;
+    }
+    filtering(){
+        const queryObj = {...this.queryString}
+        // console.log(queryObj);
+        const excludedFields = ['page', 'sort', 'limit'];
+        excludedFields.forEach( element => delete(queryObj[element]));
+        // console.log(queryObj);
+
+        let queryStr = JSON.stringify(queryObj);
+        queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g, match => '$' + match)
+        console.log({queryStr});
+        
+        this.query.find(JSON.parse(queryStr))
+        return this;
+    }
+
+    sorting(){
+
+    }
+
+    pagination(){
+
+    }
+}
 
 const productController = {
     getProducts : async(req, res) => {
         try {
-            const products = await Products.find()
+            // console.log(req.query);
+            const features = new APIFeatures(Products.find(), req.query).filtering();
+            const products = await features.query
 
             res.json({
                 products
@@ -19,21 +48,20 @@ const productController = {
     createProducts : async(req, res) => {
         try {
             const {product_id, title, price, description, content, images, category} = req.body;
-
             if(!images) return res.status(400).json({
                 message: "upload the images of the products." 
             })
-
+            
             const product = await Products.findOne({product_id});
             if(product) return res.status(400).json({
                 message:"product already exists",
             })
-
+            
             const newProduct = new Products({
-                product_id, title:title.toLowerCase() , price, description, content, images, category
+                product_id, title:title.toLowerCase(), price, description, content, images, category
             })
-
             await newProduct.save()
+            // console.log(price);
             res.json({
                 message: "created a product"
             })
