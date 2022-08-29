@@ -16,7 +16,7 @@ code {
 
 .App{
   max-width: 1230px;
-  max-height: 100vh;
+  max-height: max-content;
   margin: 0 auto;
   padding: 0 20px;
   box-shadow: 0 0 35px #eee;
@@ -38,3 +38,5 @@ button{
 }
 
 @import url('./components//headers/header.css');
+@import url('./components/mainpages/products/product.css');
+@import url('./components/mainpages/detailProduct/detailProduct.css');
