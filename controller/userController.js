@@ -64,7 +64,7 @@ const userControl = {
             user, accesstoken
         })
       })
-      res.json({ rf_token });
+      return res.json({ rf_token });
     } catch (error) {
       return res.status(500).json({
         message: error.message,

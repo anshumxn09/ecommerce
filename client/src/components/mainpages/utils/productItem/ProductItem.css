@@ -75,6 +75,11 @@
     font-size: 12px;
 }
 
+.product_card input{
+    position: absolute;
+    width: 25px;
+    height: 12px;
+}
 .bolder{
     font-size: 20px;
     font-weight: bolder;

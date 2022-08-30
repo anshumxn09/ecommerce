@@ -5,10 +5,10 @@
     /* width: 34vw; */
     padding: 15px 10px;
 }
-
+/* 
 .App{
     height: 100vh;
-}
+} */
 .login-page{
     margin: 50px auto;
     max-width: 500px;
@@ -16,6 +16,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     padding: 10px;
+    /* height: 100vh; */
 }
 
 .login-page form h2{
