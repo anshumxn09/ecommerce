@@ -7,7 +7,13 @@
     margin: 10px 0;
     position: relative;
     border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
+
+/* .product_card:hover{
+    transform: scaleY(1.02);
+} */
 
 .product_card > img{
     width: 100%;
