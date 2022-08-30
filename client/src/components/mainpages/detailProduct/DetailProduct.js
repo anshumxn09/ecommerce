@@ -37,7 +37,7 @@ const DetailProduct = () => {
         </div>
     </div>
     <div>
-        <h2>Related Products</h2>
+        <h2 className='padd'>Related Products</h2>
         <div className="products">
             {
                 products.map(product => {
