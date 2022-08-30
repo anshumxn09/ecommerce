@@ -13,12 +13,19 @@ app.use(cookieParser());
 app.use(fileUpload({
     useTempFiles: true,
 }));
-app.use(cors());
+app.use(cors({
+    'allowedHeaders': ['sessionId', 'Content-Type'],
+    'exposedHeaders': ['sessionId'],
+    'origin': '*',
+    'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    'preflightContinue': false
+  }));
 // all the routes of the server.
 app.use('/users', router);
 app.use('/api', require('./routes/categoryRoutes'));
 app.use('/api', require('./routes/upload'));
 app.use('/api', require('./routes/productRoutes'));
+app.use('/api', require('./routes/paymentRouter'));
 
 // connection to our database.
 // const URI = process.env.MONGODB_URL;

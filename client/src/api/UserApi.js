@@ -31,6 +31,7 @@ const UserAPI = (token) => {
     const addCart = async (product) => {
         if(!isLogged){
             alert("KINDLY LOGIN FIRST!!");
+            return;
         }
         const check = cart.every(item => {
             console.log(item);

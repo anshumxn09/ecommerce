@@ -9,6 +9,7 @@
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    background-color: white;
 }
 
 /* .product_card:hover{

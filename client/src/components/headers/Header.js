@@ -32,6 +32,7 @@ const Header = () => {
     setIsAdmin(false);
     setIsLogged(false);
     window.localStorage.href = "/";
+    window.location.reload();
   }
 
   const loggedRouter = () => {
@@ -68,7 +69,7 @@ const Header = () => {
             loggedRouter()
           ) : (
             <li>
-              <Link to={"/login"}>✴ Login ⭑ Register ✴</Link>
+              <Link to={"/login"}>Login / Register</Link>
             </li>
           )}
           <li>

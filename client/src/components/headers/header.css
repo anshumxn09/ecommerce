@@ -8,8 +8,9 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid navy;
-    /* background-color: lavender; */
+    border-bottom: 2px solid skyblue;
+    background-color: navy;
+    padding: 0 10px;
 }
 
 header .logo{
@@ -18,7 +19,7 @@ header .logo{
 
 header a{
     text-transform: uppercase;
-    color: black;
+    color: white;
 }
 
 header ul li{
@@ -41,8 +42,8 @@ header ul li:hover{
 }
 
 .cart-icon span{
-    background-color: navy;
-    color: lavender;
+    background-color: white;
+    color: purple;
     border-radius: 20px;
     font-weight: bolder;
     font-size: 18px;
