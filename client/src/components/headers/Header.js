@@ -31,6 +31,7 @@ const Header = () => {
     localStorage.clear();
     setIsAdmin(false);
     setIsLogged(false);
+    window.localStorage.href = "/";
   }
 
   const loggedRouter = () => {

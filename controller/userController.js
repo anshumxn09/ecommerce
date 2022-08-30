@@ -123,6 +123,26 @@ const userControl = {
         message: error.message
       })
     }
+  },
+  addCart : async (req, res) => {
+    try {
+      const user = await Users.findById(req.user.id);
+      if(!user) return res.status(400).json({
+        message : "User Doesn't Exists!!!!!!"
+      })
+
+      await Users.findOneAndUpdate({_id:req.user.id}, {
+        cart : req.body.cart
+      })
+
+      return res.json({
+        message: "updated the cart",
+      })
+    } catch (error) {
+      return res.status(500).json({
+        message : error.message
+      })
+    }
   }
 };
 
