@@ -75,10 +75,10 @@ const userControl = {
     try {
       const {email, password} = req.body;
       const user = await Users.findOne({email});
-      if(!user) return res.status(400).json({message:"user doesn't exist"});
+      if(!user) return res.status(400).json({message:"USER DOESN'T EXIST"});
 
       const isMatch = await bcrypt.compare(password, user.password);
-      if(!isMatch) return res.status(400).json({message:"password doesn't matched"});
+      if(!isMatch) return res.status(400).json({message:"PASSWORD DOESN'T MACTHED"});
 
       // if email and password is successfully authenticated then pass the token.
       

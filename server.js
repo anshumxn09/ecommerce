@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(fileUpload({
     useTempFiles: true,
 }));
-
+app.use(cors());
 // all the routes of the server.
 app.use('/users', router);
 app.use('/api', require('./routes/categoryRoutes'));

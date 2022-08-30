@@ -40,3 +40,4 @@ button{
 @import url('./components//headers/header.css');
 @import url('./components/mainpages/products/product.css');
 @import url('./components/mainpages/detailProduct/detailProduct.css');
+@import url('./components/mainpages/auth/Login.css');
