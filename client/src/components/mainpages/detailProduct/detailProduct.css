@@ -16,6 +16,7 @@
     height: 450px;
     object-fit: cover;
     display: block;
+    border: 4px dashed navy;
 }
 
 .box-detail{
