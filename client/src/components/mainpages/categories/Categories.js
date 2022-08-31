@@ -59,9 +59,10 @@ const Categories = () => {
     }
 
   return (
+    <div className="box">
     <div className='categories'>
         <form onSubmit={createCategory}>
-            <label htmlFor="category">Category</label>
+            <label htmlFor="category">Category...</label>
             <input type="text" name="category" id="category" value={category} required onChange={e => setCategory(e.target.value)}/>
 
             <button type="submit">{edit ? "Update" : "Save"}</button>
@@ -81,6 +82,7 @@ const Categories = () => {
                 })
             }
         </div>
+    </div>
     </div>
   )
 }

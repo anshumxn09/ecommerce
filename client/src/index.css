@@ -15,15 +15,16 @@ code {
 }
 
 .mainBox{
+  width: 100vw;
   padding: 0 20px;
 }
 .App{
   max-width: 100vw;
+  min-height: 100vh;
   max-height: max-content;
-  /* margin: 0 auto; */
-  /* padding: 0 20px; */
   box-shadow: 0 0 35px #eee;
   background-color: white;
+  overflow: hidden;
 }
 
 a{
@@ -47,3 +48,4 @@ button{
 @import url('./components/mainpages/auth/Login.css');
 @import url('./components/mainpages/cart/Cart.css');
 @import url('./components/mainpages/categories/Categories.css');
+@import url('./components/mainpages/createproduct/CreateProduct.css');

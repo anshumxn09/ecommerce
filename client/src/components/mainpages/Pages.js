@@ -8,6 +8,7 @@ import NotFound from './utils/notfound/NotFound';
 import DetailProduct from './detailProduct/DetailProduct';
 import { GlobalState } from '../../GlobalState';
 import Categories from './categories/Categories';
+import CreateProduct from './createproduct/CreateProduct';
 
 const Pages = () => {
   const state = useContext(GlobalState);
@@ -21,6 +22,7 @@ const Pages = () => {
       <Route exact path='/login' element={isLogged ? <NotFound/> : <Login/>}/>
       <Route exact path='/register' element={isLogged ? <NotFound/> : <Register/>}/>
       <Route exact path='/category' element={isAdmin ? <Categories/> : <NotFound/>}/>
+      <Route exact path='/create_product' element={isAdmin ? <CreateProduct/> : <NotFound/>}/>
       <Route exact path='/cart' element={<Cart/>}/>
       <Route exact path='/*' element={<NotFound/>}/>
     </Routes>
