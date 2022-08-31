@@ -8,12 +8,17 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* border-bottom: 2px solid skyblue; */
     background-color:white;
-    /* background: linear-gradient(lavender, lavenderblush); */
     padding: 0 10px;
     box-shadow: 0 3px 5px lightslategray;
+    /* border-bottom: 2px solid skyblue; */
+    /* background: linear-gradient(lavender, lavenderblush); */
 }
+
+/* .stick{
+    /* position: sticky; */
+    /* position: -webkit-sticky;
+    bottom: 0; */
 
 .line_div{
     max-width: 100vw;

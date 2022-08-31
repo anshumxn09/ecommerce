@@ -48,7 +48,7 @@ const Header = () => {
     );
   };
   return (
-    <div>
+    <div className="stick">
       <header>
         <div className="menu">
           <img src={Menu} alt="" width={30} />
