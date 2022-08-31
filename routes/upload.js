@@ -10,7 +10,7 @@ cloudinary.config({
     secret_key : process.env.CLOUD_API_SECRET,
 })
 
-router.post('/uploads',(req, res) => {
+router.post('/uploads', auth, adminAuth, (req, res) => {
     try {
         // console.log(req.files);
         if(!req.files || Object.keys(req.files).length === 0){
@@ -54,7 +54,7 @@ router.post('/uploads',(req, res) => {
     }
 })
 
-router.post('/destroy', (req, res) => {
+router.post('/destroy', auth, adminAuth, (req, res) => {
     try {
         const {public_id} = req.body;
         if(!public_id) return res.status(400).json({
