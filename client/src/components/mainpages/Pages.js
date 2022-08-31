@@ -7,10 +7,12 @@ import Cart from './cart/Cart';
 import NotFound from './utils/notfound/NotFound';
 import DetailProduct from './detailProduct/DetailProduct';
 import { GlobalState } from '../../GlobalState';
+import Categories from './categories/Categories';
 
 const Pages = () => {
   const state = useContext(GlobalState);
   const [isLogged] = state.UserAPI.isLogged;
+  const [isAdmin] = state.UserAPI.isAdmin;
   console.log(isLogged);
   return (
     <Routes>
@@ -18,6 +20,7 @@ const Pages = () => {
       <Route exact path='/detail/:id' element={<DetailProduct/>}/>
       <Route exact path='/login' element={isLogged ? <NotFound/> : <Login/>}/>
       <Route exact path='/register' element={isLogged ? <NotFound/> : <Register/>}/>
+      <Route exact path='/category' element={isAdmin ? <Categories/> : <NotFound/>}/>
       <Route exact path='/cart' element={<Cart/>}/>
       <Route exact path='/*' element={<NotFound/>}/>
     </Routes>
