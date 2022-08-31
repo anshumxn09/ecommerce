@@ -8,18 +8,26 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid skyblue;
-    background-color: navy;
+    /* border-bottom: 2px solid skyblue; */
+    background-color:white;
+    /* background: linear-gradient(lavender, lavenderblush); */
     padding: 0 10px;
+    box-shadow: 0 3px 5px lightslategray;
 }
 
+.line_div{
+    max-width: 100vw;
+    height: 7px;
+    background-color: darkslateblue;
+    margin: 5px 0px;
+}
 header .logo{
     flex:1;
 }
 
 header a{
     text-transform: uppercase;
-    color: white;
+    color: rgb(105, 32, 105);
 }
 
 header ul li{
@@ -42,8 +50,8 @@ header ul li:hover{
 }
 
 .cart-icon span{
-    background-color: white;
-    color: purple;
+    background-color: rgb(105, 32, 105);
+    color: white;
     border-radius: 20px;
     font-weight: bolder;
     font-size: 18px;

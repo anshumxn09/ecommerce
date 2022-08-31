@@ -46,5 +46,9 @@
       "last 1 safari version"
     ]
   },
+  "typeRoots": [
+    "./node_modules/@types",
+    "./src/client/types"
+  ],
   "proxy": "http://localhost:4000"
 }

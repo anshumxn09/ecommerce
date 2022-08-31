@@ -87,6 +87,7 @@ const Header = () => {
           </div>
         )}
       </header>
+      {/* <div className="line_div"></div> */}
     </div>
   );
 };

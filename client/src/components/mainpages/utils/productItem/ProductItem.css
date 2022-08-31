@@ -4,11 +4,12 @@
     height: 500px;
     padding: 15px;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
-    margin: 10px 0;
+    margin: 10px 5px;
     position: relative;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    /* background: linear-gradient(rgb(240, 200, 240), white); */
     background-color: white;
 }
 
@@ -21,7 +22,9 @@
     height: 300px;
     display: block;
     object-fit: cover;
-    border: 1px solid black;
+    border: 1px solid darkorchid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .product_box h2{
@@ -31,6 +34,7 @@
     white-space: nowrap;
     text-transform: capitalize;
     cursor: pointer;
+    color: rgb(105, 32, 105);
     /* border-top: 2px double darkmagenta; */
 }
 
@@ -41,7 +45,7 @@
     -webkit-line-clamp: 3;
     height: 70px;
     overflow: hidden;
-    color: #323232;
+    color: lightslategray;
 }
 
 .row_btn{
@@ -62,19 +66,22 @@
 }
 
 #btn_buy{
-    background: #555;
+    background: lavenderblush;
+    color: darkmagenta;
     margin-right: 5px;
     border-radius: 20px;
 }
 
 #btn_view{
-    background: teal;
+    background: darkmagenta;
+    color: lavender;
     margin-left : 5px;
     border-radius: 20px;
 }
 
 .small{
     font-size: 12px;
+    color: darkslateblue;
 }
 
 .product_card input{
@@ -85,4 +92,6 @@
 .bolder{
     font-size: 20px;
     font-weight: bolder;
+    color: darkslateblue;
+    /* border: 2px solid violet; */
 }
