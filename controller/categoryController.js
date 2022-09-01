@@ -1,4 +1,5 @@
 const Category = require("../models/categoryModel");
+const Products = require("../models/productModel");
 
 const categoryController = {
     getCategories : async(req, res) => {
@@ -34,8 +35,13 @@ const categoryController = {
     },
     deleteCategory : async (req, res) => {
         try {
+            const products = await Products.findOne({category:req.params.id})
+            console.log(products);
+            if(products) return res.status(400).json({
+                message : "Please Delete Every Product In Relationship With This Product"
+            })
             await Category.findByIdAndDelete(req.params.id)
-            res.json({
+            return res.json({
                 message: "deleted the category"
             })
         } catch (error) {
