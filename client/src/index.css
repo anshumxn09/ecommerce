@@ -16,10 +16,11 @@ code {
 
 .mainBox{
   width: 100vw;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
+
 .App{
-  /* position: relative; */
+  position: relative;
   max-width: 100vw;
   min-height: 100vh;
   max-height: max-content;

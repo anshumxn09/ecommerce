@@ -1,11 +1,41 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import { Link } from "react-router-dom";
 import { GlobalState } from "../../../../GlobalState";
+import axios from 'axios';
+import Loading from "../loading/Loading";
 
-const ProductItem = ({ product, isAdmin }) => {
+
+const ProductItem = ({ product, isAdmin, token, callBack, setCallback }) => {
   const state = useContext(GlobalState);
   const addCart = state.UserAPI.addToCart;
+  const [loading, setLoading] = useState(false);
 
+  const deleteProducts = async () => {
+    console.log(product);
+    try {
+      if(window.confirm(`ARE YOU SURE TO DELETE ${product.title}`)){
+        setLoading(!loading);
+        const destoryImag = await axios.post('/api/destroy', {
+          public_id : product.images.public_id,
+        }, {
+          headers : {Authorization : token}
+        })
+  
+        const deletedItem = await axios.delete(`/api/products/${product._id}`, {
+          headers : {Authorization : token}
+        })
+      }else{
+        return;
+      }
+      setLoading(!loading);
+      setCallback(!callBack);
+      
+    } catch (error) {
+      console.log(error.response.data.message)
+    }
+  }
+
+  if(loading) return <Loading/>
   return (
     <div className="product_card">
       {isAdmin && <input type="checkbox" checked={product.checked} />}
@@ -23,7 +53,7 @@ const ProductItem = ({ product, isAdmin }) => {
       {isAdmin ? (
         <>
           <div className="row_btn">
-            <Link id="btn_buy" to="#!">
+            <Link id="btn_buy" to="#!" onClick={deleteProducts}>
               Delete
             </Link>
             <Link id="btn_view" to={`/edit_product/${product._id}`}>

@@ -1,26 +1,48 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect} from "react";
 import axios from "axios";
 import { GlobalState } from "../../../GlobalState";
 import Loading from "../utils/loading/Loading";
+import {useNavigate, useParams} from 'react-router-dom';
 
 const initialState = {
   product_id: "",
   title: "",
   price: 0,
-  description:
-    "z lc alv a;dvn jdabvuavbjd vdabv;d vjkasd vuiab vlajsd v;kjda vi;asd bvalsd vasdsvd vlasdj vadinvasd jvaisdb vasdjkcv ;",
-  content: "njvbvlyuyadc",
+  description :"",
   category: "",
+  _id : ""
 };
 
 const CreateProduct = () => {
   const state = useContext(GlobalState);
   const [product, setProduct] = useState(initialState);
-  const [categories] = state.CategoryAPI.categories;
   const [images, setImages] = useState(false);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const param = useParams();
+  const [products, setProducts] = state.productAPI.products;
+  const [onEdit, setOnEdit] = useState(false);
+
+  useEffect(() => {
+    if(param.id){
+      setOnEdit(true);
+      products.forEach((product) => {
+          if(product._id === param.id){
+            setProduct(product);
+            setImages(product.images);
+          }
+      })
+    }else{
+      setOnEdit(false);
+      setProduct(initialState);
+      setImages(false);
+    }
+  }, [param.id, products]);
+
+  const [categories] = state.CategoryAPI.categories;
   const [isAdmin] = state.UserAPI.isAdmin;
   const [token] = state.token;
+  const [callBack, setCallback] = state.productAPI.callBack;
 
   const styleUpload = {
     display: images ? "block" : "none",
@@ -88,6 +110,38 @@ const CreateProduct = () => {
     })
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if(!isAdmin) return alert('You\'re not an ADMIN!!!!');
+      if(!images) return alert('Image of the product is required!!!!');
+      if(!onEdit) {
+      await axios.post('/api/products', {
+        ...product,
+        images
+      }, {
+        headers : {Authorization : token}
+      })
+      alert('PRODUCT ADDED!!');
+    }else{
+      await axios.put(`/api/products/${product._id}`, {
+        ...product,
+        images
+      }, {
+        headers : {Authorization : token}
+      })
+      alert('UPDATED PRODUCT!!');
+    }
+      setCallback(!callBack);
+      setImages(false);
+      setProduct(initialState);
+      navigate('/');
+    
+    } catch (error) {
+      alert(error.response.data.message);
+    }
+  }
+
   return (
     <div className="create_product">
       <div className="upload" style={uploadSettings}>
@@ -105,7 +159,7 @@ const CreateProduct = () => {
         )}
       </div>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="row">
           <label htmlFor="product_id">Product ID: </label>
           <input
@@ -115,6 +169,7 @@ const CreateProduct = () => {
             required
             value={product.product_id}
             onChange={handleChangeInput}
+            disabled={product._id}
           />
         </div>
 
@@ -131,7 +186,7 @@ const CreateProduct = () => {
         </div>
 
         <div className="row">
-          <label htmlFor="price">Price: </label>
+          <label htmlFor="price">Price(Rupees): </label>
           <input
             type="number"
             name="price"
@@ -174,14 +229,14 @@ const CreateProduct = () => {
             <option value="">Please select a category.</option>
             {categories.map((category) => {
               return (
-                <option value={category._id} key={category._id}>
+                <option value={category.name} key={category._id}>
                   {category.name}
                 </option>
               );
             })}
           </select>
         </div>
-        <button type="submit">CREATE PRODUCT</button>
+        <button type="submit">{onEdit ?"UPDATE PRODUCT":"CREATE PRODUCT"}</button>
       </form>
     </div>
   );

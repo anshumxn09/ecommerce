@@ -84,6 +84,7 @@
 
 .create_product form input, textarea{
     width: 100%;
+    margin: 4px;
     min-height: 40px;
     padding: 0 5px;
     border: 1.5px solid rgb(105, 32, 105);

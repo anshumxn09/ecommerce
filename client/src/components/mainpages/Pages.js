@@ -22,6 +22,7 @@ const Pages = () => {
       <Route exact path='/login' element={isLogged ? <NotFound/> : <Login/>}/>
       <Route exact path='/register' element={isLogged ? <NotFound/> : <Register/>}/>
       <Route exact path='/category' element={isAdmin ? <Categories/> : <NotFound/>}/>
+      <Route exact path='/edit_product/:id' element={isAdmin ? <CreateProduct/> : <NotFound/>}/>
       <Route exact path='/create_product' element={isAdmin ? <CreateProduct/> : <NotFound/>}/>
       <Route exact path='/cart' element={<Cart/>}/>
       <Route exact path='/*' element={<NotFound/>}/>
