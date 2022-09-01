@@ -7,3 +7,34 @@
 }
 
 @import url(../utils/productItem/ProductItem.css);
+
+.delete_all{
+    text-align: center;
+    margin: 20px;
+}
+
+.delete_all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 10px;
+}
+
+.delete_all span{
+    text-transform: uppercase;
+    color: forestgreen;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+}
+
+.delete_all button{
+    margin-left: 10px;
+    border: 1px solid crimson;
+    padding: 10px 25px;
+    color: white;
+    background-color: crimson;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    border-radius: 10px;
+}
