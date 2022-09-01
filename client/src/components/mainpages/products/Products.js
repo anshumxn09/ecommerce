@@ -5,7 +5,7 @@ import ProductItem from "../utils/productItem/ProductItem";
 
 const Products = () => {
   const state = useContext(GlobalState);
-  const [products] = state.productAPI.products;
+  const [products, setProducts] = state.productAPI.products;
   const [isAdmin] = state.UserAPI.isAdmin;  
   const [token] = state.token;
   const [callBack, setCallback] = state.productAPI.callBack;
@@ -22,6 +22,7 @@ const Products = () => {
               token={token}
               callBack={callBack}
               setCallback={setCallback}
+              setProducts={setProducts}
             />
           );
         })}

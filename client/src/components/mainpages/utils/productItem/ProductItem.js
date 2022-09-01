@@ -5,10 +5,11 @@ import axios from 'axios';
 import Loading from "../loading/Loading";
 
 
-const ProductItem = ({ product, isAdmin, token, callBack, setCallback }) => {
+const ProductItem = ({ product, isAdmin, token, callBack, setCallback, setProducts}) => {
   const state = useContext(GlobalState);
   const addCart = state.UserAPI.addToCart;
   const [loading, setLoading] = useState(false);
+  // const [checkValue, setCheckValue] = useState(false);
 
   const deleteProducts = async () => {
     console.log(product);
@@ -35,10 +36,15 @@ const ProductItem = ({ product, isAdmin, token, callBack, setCallback }) => {
     }
   }
 
+  const handleCheckBox = async (product) => {
+    console.log(product);
+  }
+
+
   if(loading) return <Loading/>
   return (
     <div className="product_card">
-      {isAdmin && <input type="checkbox" checked={product.checked} />}
+      {isAdmin && <input type="checkbox" checked={product.checked} onChange={() => handleCheckBox(product)}/>}
       <img src={product.images.url} alt="" />
 
       <div className="product_box">

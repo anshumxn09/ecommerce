@@ -8,7 +8,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color:white;
+    background-color: snow;
     padding: 0 10px;
     box-shadow: 0 3px 5px lightslategray;
     /* border-bottom: 2px solid skyblue; */

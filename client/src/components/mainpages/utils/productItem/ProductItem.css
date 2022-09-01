@@ -23,8 +23,8 @@
     display: block;
     object-fit: cover;
     border: 1px solid darkorchid;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .product_box h2{
@@ -85,9 +85,9 @@
 }
 
 .product_card input{
-    position: absolute;
+    position: absolute; 
     width: 25px;
-    height: 12px;
+    height: 24px;
 }
 .bolder{
     font-size: 20px;
