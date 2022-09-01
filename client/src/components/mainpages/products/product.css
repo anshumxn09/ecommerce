@@ -1,8 +1,12 @@
 .products{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* justify-items: center; */
+    justify-content: space-evenly;
     margin: 20px 0;
 }
 
@@ -37,4 +41,70 @@
     font-weight: bolder;
     letter-spacing: 1.3px;
     border-radius: 10px;
+}
+
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.filter_menu input{
+    border: 1px solid rgb(105, 32, 105);
+    padding: 0 10px;
+    text-transform: uppercase;
+    height: 40px;
+    flex: 1;
+    margin: 10px 10px;
+    background-color: rgb(241, 241, 250);
+    outline: rgb(105, 32, 105);
+    color: rgb(105, 32, 105);
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.filter_menu select{
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rebeccapurple;
+    border-radius: 10px;
+}
+
+.filter_menu select option{
+    color: rebeccapurple;
+    background-color: lavender;
+}
+.getbold{
+    font-weight: bolder;
+    color: rgb(105, 32, 105);
+}
+
+.load_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.load_more button{
+    border: 1px solid lavender;
+    padding: 2px 15px;
+    font: bold;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(105, 32, 105);
+    transition: all 0.3s ease;
+}
+
+.load_more button:hover{
+    border: 1px solid rgb(105, 32, 105);
+    background-color: lavender;
+    color: rgb(105, 32, 105);
 }

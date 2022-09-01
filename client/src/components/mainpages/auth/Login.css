@@ -1,5 +1,5 @@
 .toastify{
-    background: navy;
+    background: rgb(105, 32, 105);
     color: lightcyan;
     font-size: 20px;
     /* width: 34vw; */
@@ -12,7 +12,7 @@
 .login-page{
     margin: 50px auto;
     max-width: 500px;
-    border: 1px solid navy;
+    border: 1px solid rgb(105, 32, 105);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     padding: 10px;
@@ -37,18 +37,18 @@
     height: 40px;
     margin: 10px 0;
     padding: 0 5px;
-    border: 1px solid navy;
+    border: 1px solid rgb(105, 32, 105);
 }
 
 .login-page form button{
-    color: navy;
+    color: rgb(105, 32, 105);
     border-radius: 10px;
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
 }
 
 .login-page form button:hover{
-    background-color: navy;
+    background-color: rgb(105, 32, 105);
     color: white;
 }
 

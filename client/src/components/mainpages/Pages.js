@@ -14,7 +14,7 @@ const Pages = () => {
   const state = useContext(GlobalState);
   const [isLogged] = state.UserAPI.isLogged;
   const [isAdmin] = state.UserAPI.isAdmin;
-  console.log(isLogged);
+  // console.log(isLogged);
   return (
     <Routes>
       <Route exact path='/' element={<Products/>}/>
