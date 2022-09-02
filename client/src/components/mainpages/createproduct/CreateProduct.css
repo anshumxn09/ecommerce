@@ -10,7 +10,7 @@
     max-width: 450px;
     height: 500px;
     width: 100%;
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid  rgb(41, 0, 41);;
     padding: 15px;
     margin: 20px;
     position: relative;
@@ -32,7 +32,7 @@
     top: 0;
     left: 0;
     background-color: white;
-    color: rgb(105, 32, 105);
+    color:  rgb(41, 0, 41);
     font-size: 17rem;
     text-align: center;
     cursor: pointer;
@@ -87,7 +87,7 @@
     margin: 4px;
     min-height: 40px;
     padding: 0 5px;
-    border: 1.5px solid rgb(105, 32, 105);
+    border: 1.5px solid  rgb(41, 0, 41);
     outline: none;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -96,7 +96,7 @@
 .create_product form button{
     width: 200px;
     height: 40px;
-    background-color: rgb(105, 32, 105);
+    background-color:  rgb(41, 0, 41);
     color: white;
     font-weight: bolder;
     border-radius: 20px;
@@ -105,7 +105,7 @@
 
 .create_product form .row label{
     font-weight:500;
-    color: rgb(105, 32, 105);
+    color:  rgb(41, 0, 41);
     text-transform: uppercase;
 }
 .create_product form .row select{

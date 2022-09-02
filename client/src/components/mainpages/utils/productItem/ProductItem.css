@@ -3,7 +3,7 @@
     overflow: hidden;
     height: 500px;
     padding: 15px;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+    box-shadow: 0 4px 8px 0px rgba(41, 0, 41, 0.432), 0 6px 20px 0 rgba(41, 0, 41, 0.568);
     margin: 10px 5px;
     position: relative;
     border-radius: 10px;
@@ -17,7 +17,7 @@
     height: 300px;
     display: block;
     object-fit: cover;
-    border: 1px solid darkorchid;
+    border: 1px solid  rgb(41, 0, 41);;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -61,13 +61,13 @@
 
 #btn_buy{
     background: lavenderblush;
-    color: darkmagenta;
+    color:  rgb(41, 0, 41);;
     margin-right: 5px;
     border-radius: 20px;
 }
 
 #btn_view{
-    background: darkmagenta;
+    background:  rgb(41, 0, 41);;
     color: lavender;
     margin-left : 5px;
     border-radius: 20px;

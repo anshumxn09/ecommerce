@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 header{
     min-height: 70px;
     width: 100%;
@@ -8,7 +7,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color:  rgb(41, 0, 41);
     padding: 0 10px;
     box-shadow: 0 3px 5px lightslategray;
 }
@@ -23,19 +22,21 @@ header .logo{
     flex:1;
 }
 
+header .logo h1 a{
+    font-family: 'Aboreto', cursive;;
+}
 header a{
     position: relative;
     text-transform: uppercase;
-    color: rgb(105, 32, 105);
+    color:  white;
 }
 
 header ul li a::after{
     content: "";
     position: absolute;
-    /* top: 0; */
     left: 0;
     bottom: -10px;
-    background-color: rgb(105, 32, 105);
+    background-color: white;
     width: 0%;
     height: 3px;
     transition: all 0.3s ease-in-out;
@@ -65,8 +66,8 @@ header ul li:hover{
 }
 
 .cart-icon span{
-    background-color: rgb(105, 32, 105);
-    color: white;
+    background-color:white;
+    color:  rgb(41, 0, 41);
     border-radius: 20px;
     font-weight: bolder;
     font-size: 18px;

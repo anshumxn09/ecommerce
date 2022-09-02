@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { GlobalState } from "../../GlobalState";
 import Menu from "./icons/bars-solid.svg";
 import XMark from "./icons/xmark-solid.svg";
-import Cart from "./icons/cart-shopping-solid.svg";
+// import Cart from "./icons/cart-shopping-solid.svg";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -82,7 +83,7 @@ const Header = () => {
           <div className="cart-icon">
             <span>{cart.length}</span>
             <Link to={"/cart"}>
-              <img src={Cart} alt="" width={30} />
+              <ShoppingCartIcon color="white"/>
             </Link>
           </div>
         )}

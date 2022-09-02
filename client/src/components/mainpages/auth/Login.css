@@ -1,31 +1,27 @@
 .toastify{
-    background: rgb(105, 32, 105);
+    background: rgb(41, 0, 41);
     color: lightcyan;
     font-size: 20px;
-    /* width: 34vw; */
     padding: 15px 10px;
 }
-/* 
-.App{
-    height: 100vh;
-} */
+
 .login-page{
     margin: 50px auto;
     max-width: 500px;
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid rgb(41, 0, 41);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
-    /* height: 100vh; */
 }
 
 .login-page form h2{
     text-align:center;
+    font-family: 'Aboreto', cursive;
 }
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #555;
+    color:  rgb(41, 0, 41);
 }
 
 .login-page form input{
@@ -37,18 +33,18 @@
     height: 40px;
     margin: 10px 0;
     padding: 0 5px;
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid  rgb(41, 0, 41);
 }
 
 .login-page form button{
-    color: rgb(105, 32, 105);
+    color:  rgb(41, 0, 41);
     border-radius: 10px;
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
 }
 
 .login-page form button:hover{
-    background-color: rgb(105, 32, 105);
+    background-color:  rgb(41, 0, 41);
     color: white;
 }
 

@@ -4,8 +4,22 @@
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     margin: 20px 0;
+    background-color: white;
 }
 
+@media screen and (max-width:1110px) {
+    .products{
+        grid-template-columns: auto auto;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width:730px) {
+    .products{
+        grid-template-columns: auto;
+        justify-content: center
+    }
+}
 @import url(../utils/productItem/ProductItem.css);
 
 .delete_all{
@@ -95,12 +109,13 @@
     font: bold;
     color: white;
     border-radius: 10px;
-    background-color: rgb(105, 32, 105);
+    background-color:  rgb(41, 0, 41);
     transition: all 0.3s ease;
+    letter-spacing: 3px;
 }
 
 .load_more button:hover{
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid  rgb(41, 0, 41);;
     background-color: lavender;
-    color: rgb(105, 32, 105);
+    color: rgb(41, 0, 41);;
 }

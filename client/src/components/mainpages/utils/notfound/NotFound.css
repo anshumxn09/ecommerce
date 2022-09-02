@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     background-color: white;
-    color: rgb(105, 32, 105);
+    color:  rgb(41, 0, 41);;
     height: 92vh;
     transition: all 0.3 ease-in-out;
     animation: animate 2s linear infinite;
@@ -14,12 +14,12 @@
     0%{
     }
     50%{
-        background-color: rgb(105, 32, 105);
+        background-color:  rgb(41, 0, 41);;
         color: white;
     }
     100%{
         background-color: white;
-        color: rgb(105, 32, 105);
+        color:  rgb(41, 0, 41);;
     }
 }
 .f404{

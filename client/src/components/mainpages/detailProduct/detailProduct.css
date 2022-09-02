@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     padding: 50px;
     font-size: 150%;
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid rgb(41, 0, 41);
 }
 
 .detail img{
@@ -16,7 +16,7 @@
     height: 450px;
     object-fit: cover;
     display: block;
-    border: 4px dashed rgb(105, 32, 105);
+    border: 4px dashed rgb(41, 0, 41);
 }
 
 .box-detail{
@@ -33,7 +33,7 @@
 
 .box-detail h2{
     text-transform: capitalize;
-    color: slateblue;
+    color: rgb(41, 0, 41);
     letter-spacing: 2px;
     font-weight: 2rem;
 }
@@ -45,13 +45,14 @@
 }
 
 .box-detail .cart{
-    background-color: rgb(105, 32, 105);
+    background-color: rgb(41, 0, 41);
     color: white;
     margin-top: 10px;
     padding: 10px 25px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-radius: 18px;
 }
 
 .padd{

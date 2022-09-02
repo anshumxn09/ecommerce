@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(105, 32, 105);
+    background-color:lavender;
     height: 92vh;
 }
 .ntgcartcenter{
@@ -13,14 +13,14 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-radius: 20px;
 }
 
 .ntgcartcenter a{
     padding: 5px 15px;
     margin: 5px 0px;
-    background-color: rebeccapurple;
+    background-color:  rgb(41, 0, 41);
     color: white;
     border-radius: 10px;
 }

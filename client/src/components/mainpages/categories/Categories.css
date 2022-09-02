@@ -1,15 +1,14 @@
 .categories{
-    max-width: 700px;
+    min-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px auto;
-    border: 1px solid  rgb(105, 32, 105);
+    border: 1px solid   rgb(41, 0, 41);
     padding: 10px 0;
     border-radius: 10px;
-    /* background-color: ; */
 }
 
 .categories form{
@@ -24,7 +23,8 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 20px;
-    color:  rgb(105, 32, 105);
+    font-family: 'Aboreto', cursive;
+    color: rgb(41, 0, 41);
 }
 
 .categories input, button{
@@ -40,7 +40,7 @@
 
 .categories button{
     width: 70px;
-    background-color: rgb(105, 32, 105);
+    background-color:  rgb(41, 0, 41);
     color: white;
     font-weight: bolder;
     margin-left: 10px;
@@ -57,7 +57,7 @@
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid  rgb(41, 0, 41);
 
 }
 
