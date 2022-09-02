@@ -64,7 +64,7 @@ const Products = () => {
   };
   return (
     <>
-    <Carousell/>
+    {/* <Carousell/> */}
     <Filter/>
       {isAdmin ? (
         <div className="delete_all">
