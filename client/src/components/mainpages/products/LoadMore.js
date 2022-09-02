@@ -15,4 +15,4 @@ const LoadMore = () => {
   )
 }
 
-export default LoadMore
+export default LoadMore;

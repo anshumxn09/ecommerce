@@ -51,3 +51,5 @@ button{
 @import url('./components/mainpages/cart/Cart.css');
 @import url('./components/mainpages/categories/Categories.css');
 @import url('./components/mainpages/createproduct/CreateProduct.css');
+@import url('./components//mainpages/utils/NoCartItem/NothingCart.css');
+@import url('./components//mainpages/utils/notfound/NotFound.css');

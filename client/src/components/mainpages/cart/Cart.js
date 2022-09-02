@@ -3,6 +3,7 @@ import { GlobalState } from "../../../GlobalState";
 // import { Link } from "react-router-dom";
 import axios from 'axios';
 import PaypalButton from './PaypalButton';
+import NothingCart from "../utils/NoCartItem/NothingCart";
 
 const Cart = () => {
   const state = useContext(GlobalState);
@@ -68,9 +69,7 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <h2 style={{ textAlign: "center", fontSize: "1.5rem" }}>
-        Nothing Added To Cart
-      </h2>
+      <NothingCart/>
     );
   }
   return (

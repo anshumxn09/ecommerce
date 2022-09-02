@@ -79,6 +79,7 @@ const Products = () => {
       ) : (
         <></>
       )}
+      {/* <div className="mainBox"> */}
       <div className="products">
         {products.map((products) => {
           return (

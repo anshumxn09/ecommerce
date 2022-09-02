@@ -9,13 +9,8 @@
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
-    /* background: linear-gradient(rgb(240, 200, 240), white); */
     background-color: white;
 }
-
-/* .product_card:hover{
-    transform: scaleY(1.02);
-} */
 
 .product_card > img{
     width: 100%;
@@ -35,7 +30,6 @@
     text-transform: capitalize;
     cursor: pointer;
     color: rgb(105, 32, 105);
-    /* border-top: 2px double darkmagenta; */
 }
 
 .product_box p{

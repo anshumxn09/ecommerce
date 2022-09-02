@@ -9,9 +9,7 @@ function App() {
       <Router>
         <div className="App">
           <Header/>
-          <div className="mainBox">
           <Pages/>
-          </div>
         </div>
       </Router>
     </DataProvider>

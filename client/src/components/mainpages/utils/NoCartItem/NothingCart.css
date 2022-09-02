@@ -1,0 +1,26 @@
+.mainntg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 32, 105);
+    height: 92vh;
+}
+.ntgcartcenter{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.ntgcartcenter a{
+    padding: 5px 15px;
+    margin: 5px 0px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+}
