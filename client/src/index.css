@@ -9,6 +9,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: lavender; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: lavender; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(122, 52, 122); 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
