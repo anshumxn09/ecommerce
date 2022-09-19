@@ -29,7 +29,12 @@ const paymentController = {
                 name, email, cart, paymentID, address
             })
 
-            res.json({newPayment})
+            cart.filter((item) => {
+                return sold(item._id, item.Quantity, item.sold)
+            })
+
+            await newPayment.save();
+            res.json({newPayment});
 
         } catch (error) {
             return res.status(500).json({
@@ -39,4 +44,13 @@ const paymentController = {
     }
 }
 
+const sold = async (id, quantity, oldSold) => {
+    console.log("hello");
+    console.log((parseInt(quantity) + parseInt(oldSold)));
+    await Products.findOneAndUpdate({
+        _id : id
+    }, {
+        sold : (parseInt(quantity) + parseInt(oldSold))
+    })
+}
 module.exports = paymentController;
