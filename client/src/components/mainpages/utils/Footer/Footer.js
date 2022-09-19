@@ -21,7 +21,7 @@ const Footer = () => {
   ]);
   const [name] = useState(["Anshuman" ,"Hamza", "Vansh"]);
 
-  console.log(categories);
+  // console.log(categories);
   return (
     <div className="myFooter">
       <p className="brandName">URBANKING</p>

@@ -26,6 +26,9 @@
     font-size: 200px;
     transition: all 0.5 ease-in-out;
     animation: borderAnimate 5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes borderAnimate {

@@ -7,6 +7,8 @@ const UserAPI = (token) => {
     const [isLogged, setIsLogged] = useState(false);
     const [isAdmin, setIsAdmin] = useState(false);
     const [cart, setCart] = useState([]);
+    const [history, setHistory] = useState([]);
+    const [callBack, setCallBack] = useState(false);
 
     useEffect(() => {
         if(token) {
@@ -27,6 +29,19 @@ const UserAPI = (token) => {
             getUser();
         }
     }, [token])
+
+    useEffect(() => {
+        if(token){
+            const getHistory = async () => {
+                // console.log('Anshuman');
+                const res = await axios.get('/users/history', {
+                    headers : {Authorization : token}
+                })
+                setHistory(res.data);
+            }
+            getHistory()
+        }
+    }, [token, callBack])
 
     const addCart = async (product) => {
         console.log(product);
@@ -60,10 +75,12 @@ const UserAPI = (token) => {
         }
     }
   return {
-    isLogged : [isLogged, setIsLogged],
-    isAdmin : [isAdmin, setIsAdmin],
-    addToCart : addCart,
-    cart: [cart, setCart]
+    isLogged: [isLogged, setIsLogged],
+    isAdmin: [isAdmin, setIsAdmin],
+    addToCart: addCart,
+    cart: [cart, setCart],
+    history: [history, setHistory],
+    callBack: [callBack, setCallBack]
   }
 }
 

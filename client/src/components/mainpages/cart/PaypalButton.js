@@ -13,6 +13,7 @@ const PaypalButton = (props) => {
     const [token] = state.token;
     const [cart, setCart] = state.UserAPI.cart;
     const {product, sum, setSum} = props;
+    const [callBack, setCallBack] = state.UserAPI.callBack;
 
     const handleApprove = async (data, order) => {
         setPaidFor(true);
@@ -33,6 +34,7 @@ const PaypalButton = (props) => {
           })
         setSum(0);
         alert('you have successfully placed an order!!!');
+        setCallBack(!callBack);
         
     }
 
