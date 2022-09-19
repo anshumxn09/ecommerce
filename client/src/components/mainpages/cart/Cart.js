@@ -20,8 +20,9 @@ const Cart = () => {
     getTotal();
    }, [cart])
 
-  const addToCart = async () => {
+  const addToCart = async (cart) => {
     try {
+      console.log('Anshuman Keep Working..');
       await axios.patch('/users/addtocart', {cart}, {
         headers : {Authorization : token}
       })
@@ -37,7 +38,7 @@ const Cart = () => {
       }
     })
     setCart([...cart]);
-    addToCart()
+    addToCart(cart)
   }
 
   const decrement = (id) => {
@@ -59,12 +60,8 @@ const Cart = () => {
       })
 
       setCart([...cart]);
-      addToCart();
+      addToCart(cart);
     }
-  }
-
-  const tranSuccess = async (payment) => {
-    console.log(payment);
   }
 
   if (cart.length === 0) {
@@ -101,8 +98,7 @@ const Cart = () => {
 
       <div className="total">
         <h3>Total:₹ {sum}</h3>
-        <PaypalButton total={sum} 
-          tranSuccess={tranSuccess}
+        <PaypalButton product={cart} sum={sum} setSum={setSum}
         />
       </div>
     </div>

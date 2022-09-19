@@ -29,6 +29,7 @@ const UserAPI = (token) => {
     }, [token])
 
     const addCart = async (product) => {
+        console.log(product);
         if(!isLogged){
             alert("KINDLY LOGIN FIRST!!");
             return;
@@ -44,7 +45,7 @@ const UserAPI = (token) => {
                 ...product,
                 Quantity : 1
             }])
-
+            console.log('hello');
             await axios.patch('/users/addtocart', {
                 cart : [...cart, {
                     ...product,

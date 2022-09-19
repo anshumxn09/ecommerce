@@ -5,7 +5,7 @@ import ProductItem from "../utils/productItem/ProductItem";
 import axios from "axios";
 import Filter from "./Filter";
 import LoadMore from "./LoadMore";
-import Carousell from "../utils/Carousel/Carousell";
+// import Carousell from "../utils/Carousel/Carousell";
 
 const Products = () => {
   const state = useContext(GlobalState);
