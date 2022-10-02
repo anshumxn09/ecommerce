@@ -18,7 +18,10 @@
     display: block;
     border: 4px dashed rgb(41, 0, 41);
 }
-
+.reviewsHeader{
+    margin: 8px 0px;
+    text-align: center;
+}
 .box-detail{
     max-width: 500px;
     width: 100%;

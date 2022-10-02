@@ -2,6 +2,7 @@ import React, {useContext, useState, useEffect} from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { GlobalState } from '../../../GlobalState'
 import ProductItem from '../utils/productItem/ProductItem'
+import Review from './Review'
 
 const DetailProduct = () => {
     const params = useParams()
@@ -38,6 +39,8 @@ const DetailProduct = () => {
         </div>
     </div>
     <div>
+    <h2 className='reviewsHeader'>Reviews</h2>
+    <Review userId={params.id}/>
         <h2 className='padd'>Related Products</h2>
         <div className="products">
             {

@@ -1,0 +1,41 @@
+.reviewbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewbox > input{
+    height: 40px;
+}
+#rdata{
+    width: 300px;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+}
+.rsub{
+    background-color: rgb(41, 0, 41);
+    color: white;
+    width: 30px;
+    font-size: 20px;
+}
+.reviewContent{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rbox{
+    margin: 5px;
+    width: 200px;
+    height: max-content;
+    border: 2px solid rgb(41, 0, 41);
+    padding: 5px;
+    color: rgb(41, 0, 41);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rbox:hover{
+    background-color: rgb(41, 0, 41);
+    color: white;
+}

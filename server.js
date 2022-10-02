@@ -32,6 +32,7 @@ app.use('/api', require('./routes/categoryRoutes'));
 app.use('/api', require('./routes/upload'));
 app.use('/api', require('./routes/productRoutes'));
 app.use('/api', require('./routes/paymentRouter'));
+app.use('/api', require('./routes/reviewRoutes'));
 
 // connection to our database.
 // const URI = process.env.MONGODB_URL;

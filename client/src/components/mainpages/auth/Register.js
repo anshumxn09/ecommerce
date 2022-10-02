@@ -36,7 +36,7 @@ const Register = () => {
       });
 
       localStorage.setItem('firstLogin', true);
-      window.location.href = "/login";
+      window.location.href = "/";
     }
     } catch (error) {
       toast(error.response.data.message, {

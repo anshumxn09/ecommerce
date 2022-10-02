@@ -17,7 +17,7 @@ const PaypalButton = (props) => {
 
     const handleApprove = async (data, order) => {
         setPaidFor(true);
-        console.log(data);
+        // console.log(data);
         const address = {
             country : "USA",
             city : "California",
