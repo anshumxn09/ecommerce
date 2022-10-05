@@ -11,6 +11,7 @@ import Categories from "./categories/Categories";
 import CreateProduct from "./createproduct/CreateProduct";
 import OrderHistory from "./history/OrderHistory";
 import OrderDetails from "./history/OrderDetails";
+import Developer from "./utils/Developer/Developer";
 
 const Pages = () => {
   const state = useContext(GlobalState);
@@ -21,6 +22,7 @@ const Pages = () => {
     <Routes>
       <Route exact path="/" element={<Products />} />
       <Route exact path="/detail/:id" element={<DetailProduct />} />
+      <Route exact path="/developers" element={<Developer />} />
       <Route exact path="/history" element={isLogged ? <OrderHistory /> : <NotFound/>}/>
       <Route exact path="/history/:id" element={isLogged ? <OrderDetails /> : <NotFound/>}/>
       <Route

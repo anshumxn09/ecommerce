@@ -37,6 +37,16 @@
     padding: 10px;
 }
 
+.infoAboutBrnd{
+    padding: 20px;
+    text-transform: uppercase;
+}
+.infoAboutBrnd > a{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
 .sameFit{
     display: flex;
     justify-content: center;

@@ -5,7 +5,7 @@ import ProductItem from "../utils/productItem/ProductItem";
 import axios from "axios";
 import Filter from "./Filter";
 import LoadMore from "./LoadMore";
-// import Carousell from "../utils/Carousel/Carousell";
+import Carousell from "../utils/Carousel/Carousell";
 
 const Products = () => {
   const state = useContext(GlobalState);
@@ -98,6 +98,9 @@ const Products = () => {
         })}
       </div>
       <LoadMore/>
+      <div className="companyBlock">
+        <img src="https://res.cloudinary.com/anshumxn09/image/upload/v1664901962/test/top-apparel-brands_q4u6bf.png" alt="" />
+      </div>
       {products.length === 0 && <Loading />}
     </>
   );

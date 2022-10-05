@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { GlobalState } from "../../../../GlobalState";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   const state = useContext(GlobalState);
@@ -43,20 +44,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="infoAboutBrnd">
-        {
-            name.map(elem => {
-                return (
-                    <div className="box">
-                    <LinkedInIcon className="icon" />
-                    <a href="">{elem}</a>
-                    </div>
-                )
-            })
-        }
+          <Link to="/developers">Click to know about developer's</Link>
       </div>
     </div>
   );
 };
-
-<LinkedInIcon style={{ color: "white" }} />
 export default Footer;

@@ -1,27 +1,19 @@
 import React, { useState } from 'react'
-import { Slide } from 'react-slideshow-image';
-import { myImages } from './ImageData';
+import './Carousell.css';
 
 const Carousell = () => {
   const [autoplay] = useState(true);
   return (
     <>
-      <section className="hero-images slider">
-        <Slide transitionDuration={500} indicators autoplay={autoplay}>
-          {myImages.map((image) => (
-            <div key={image.id} className="hero slide">
-                <img
-                  id={image.id}
-                  className="responsive"
-                  src={image.src}
-                  alt={image.alt}
-                />
+      <div className="containerC">
+        <div className="contentC">
+            <div className="imageC">
+                <img src="https://res.cloudinary.com/anshumxn09/image/upload/v1664974876/test/vansh_vsvlii.jpg" alt="vansh image" />
             </div>
-          ))}
-        </Slide>
-      </section>
+        </div>
+    </div>
     </>
   )
 }
 
-export default Carousell
+export default Carousell;
