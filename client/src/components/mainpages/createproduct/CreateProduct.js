@@ -50,8 +50,8 @@ const CreateProduct = () => {
 
   const uploadSettings = {
     border: images
-      ? "1px solid rgb(105, 32, 105)"
-      : "4px dashed rgb(105, 32, 105)",
+      ? "1px solid black"
+      : "4px dashed black",
   };
 
   const handleUpload = async (e) => {

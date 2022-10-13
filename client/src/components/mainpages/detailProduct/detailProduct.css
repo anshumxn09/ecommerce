@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     padding: 50px;
     font-size: 150%;
-    border: 1px solid rgb(41, 0, 41);
+    border: 1px solid black;
 }
 
 .detail img{
@@ -16,7 +16,7 @@
     height: 450px;
     object-fit: cover;
     display: block;
-    border: 4px dashed rgb(41, 0, 41);
+    border: 4px dashed black;
 }
 .reviewsHeader{
     margin: 8px 0px;
@@ -36,7 +36,7 @@
 
 .box-detail h2{
     text-transform: capitalize;
-    color: rgb(41, 0, 41);
+    color: black;
     letter-spacing: 2px;
     font-weight: 2rem;
 }
@@ -48,7 +48,7 @@
 }
 
 .box-detail .cart{
-    background-color: rgb(41, 0, 41);
+    background-color: black;
     color: white;
     margin-top: 10px;
     padding: 10px 25px;

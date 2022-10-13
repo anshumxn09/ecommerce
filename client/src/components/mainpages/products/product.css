@@ -72,15 +72,15 @@
 }
 
 .filter_menu input{
-    border: 1px solid rgb(105, 32, 105);
+    border: 1px solid black;
     padding: 0 10px;
     text-transform: uppercase;
     height: 40px;
     flex: 1;
     margin: 10px 10px;
-    background-color: rgb(241, 241, 250);
-    outline: rgb(105, 32, 105);
-    color: rgb(105, 32, 105);
+    background-color: white;
+    outline: black;
+    color: black;
     font-weight: bolder;
     font-size: 16px;
     border-radius: 15px;
@@ -90,17 +90,18 @@
     height: 40px;
     font-size: 15px;
     text-transform: uppercase;
-    color: rebeccapurple;
+    color: white;
+    background-color: black;
     border-radius: 10px;
 }
 
 .filter_menu select option{
-    color: rebeccapurple;
-    background-color: lavender;
+    color: white;
+    background-color: black;
 }
 .getbold{
     font-weight: bolder;
-    color: rgb(105, 32, 105);
+    color: black;
 }
 
 .load_more{
@@ -116,13 +117,43 @@
     font: bold;
     color: white;
     border-radius: 10px;
-    background-color:  rgb(41, 0, 41);
+    background-color: black;
     transition: all 0.3s ease;
     letter-spacing: 3px;
 }
 
 .load_more button:hover{
-    border: 1px solid  rgb(41, 0, 41);;
+    border: 1px solid  black;
     background-color: lavender;
-    color: rgb(41, 0, 41);;
+    color: black;
 }
+
+.imagesC{
+    width: 100vw;
+    height: 540px;
+    /* margin-top: 70px; */
+    padding: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.imagesC > .getImage{
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('https://res.cloudinary.com/anshumxn09/image/upload/v1665669128/test/vansh_qbc93q.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px dashed black;
+    animation: changeBG 10s linear infinite;
+}
+
+/* @keyframes changeBG {
+    0%{
+        background: url('https://res.cloudinary.com/anshumxn09/image/upload/v1665669128/test/vansh_qbc93q.jpg');
+    }
+    25%{
+        background: url('https://cdn5.vectorstock.com/i/1000x1000/52/04/online-shopping-e-commerce-banner-concept-vector-25035204.jpg');
+    }
+} */

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:lavender;
+    background-color:black;
     height: 92vh;
 }
 .ntgcartcenter{
@@ -20,7 +20,7 @@
 .ntgcartcenter a{
     padding: 5px 15px;
     margin: 5px 0px;
-    background-color:  rgb(41, 0, 41);
+    background-color: black;
     color: white;
     border-radius: 10px;
 }

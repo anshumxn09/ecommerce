@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px auto;
-    border: 1px solid   rgb(41, 0, 41);
+    border: 1px solid black;
     padding: 10px 0;
     border-radius: 10px;
 }
@@ -23,8 +23,9 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 20px;
-    font-family: 'Aboreto', cursive;
-    color: rgb(41, 0, 41);
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: black;
 }
 
 .categories input, button{
@@ -40,7 +41,7 @@
 
 .categories button{
     width: 70px;
-    background-color:  rgb(41, 0, 41);
+    background-color: black;
     color: white;
     font-weight: bolder;
     margin-left: 10px;
@@ -57,11 +58,12 @@
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid  rgb(41, 0, 41);
+    border: 1px solid black;
 
 }
 
 .categories .row p{
     text-transform: uppercase;
-    color: darkslateblue;
+    color: black;
+    font-weight: bolder;
 }

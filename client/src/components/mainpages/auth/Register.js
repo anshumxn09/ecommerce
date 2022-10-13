@@ -58,6 +58,9 @@ const Register = () => {
         </div>
         <ToastContainer/>
       </form>
+      <div className="imagesL">
+      <img src="https://i.pinimg.com/736x/ec/fb/9f/ecfb9ffd184bceec03b3c19161eee7fd.jpg" alt="" height={300} />
+      </div>
     </div>
   )
 }

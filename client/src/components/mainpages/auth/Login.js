@@ -51,6 +51,9 @@ const Login = () => {
         </div>
         <ToastContainer/>
       </form>
+      <div className="imagesL">
+      <img src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?w=2000" alt="" height={300} />
+      </div>
     </div>
   )
 }

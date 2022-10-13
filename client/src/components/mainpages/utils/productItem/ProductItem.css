@@ -3,12 +3,13 @@
     overflow: hidden;
     height: 500px;
     padding: 15px;
-    box-shadow: 0 4px 8px 0px rgba(41, 0, 41, 0.432), 0 6px 20px 0 rgba(41, 0, 41, 0.568);
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px 5px;
     position: relative;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    border: 1px solid black;
     background-color: white;
 }
 
@@ -17,9 +18,7 @@
     height: 300px;
     display: block;
     object-fit: cover;
-    border: 1px solid  rgb(41, 0, 41);;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border: 1px dashed  black;
 }
 
 .product_box h2{
@@ -29,7 +28,7 @@
     white-space: nowrap;
     text-transform: capitalize;
     cursor: pointer;
-    color: rgb(105, 32, 105);
+    color: black;
 }
 
 .product_box p{
@@ -60,17 +59,17 @@
 }
 
 #btn_buy{
-    background: lavenderblush;
-    color:  rgb(41, 0, 41);;
+    background: black;
+    color:white;
     margin-right: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #btn_view{
-    background:  rgb(41, 0, 41);;
-    color: lavender;
+    background:  black;
+    color: white;
+    border-radius: 10px;
     margin-left : 5px;
-    border-radius: 20px;
 }
 
 .small{

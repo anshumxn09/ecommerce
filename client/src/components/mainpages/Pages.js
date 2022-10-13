@@ -19,6 +19,7 @@ const Pages = () => {
   const [isAdmin] = state.UserAPI.isAdmin;
   // console.log(isLogged);
   return (
+    <div style={{marginTop: '0px'}}>
     <Routes>
       <Route exact path="/" element={<Products />} />
       <Route exact path="/detail/:id" element={<DetailProduct />} />
@@ -53,6 +54,7 @@ const Pages = () => {
       <Route exact path="/cart" element={<Cart />} />
       <Route exact path="/*" element={<NotFound />} />
     </Routes>
+  </div>
   );
 };
 

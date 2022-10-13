@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 header{
     min-height: 70px;
     width: 100%;
@@ -7,7 +8,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color:  rgb(41, 0, 41);
+    z-index: 2;
+    background-color: black;
     padding: 0 10px;
     box-shadow: 0 3px 5px lightslategray;
 }
@@ -19,11 +21,17 @@ header{
     margin: 5px 0px;
 }
 header .logo{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     flex:1;
 }
 
 header .logo h1 a{
-    font-family: 'Aboreto', cursive;;
+    margin-left: 5px;
+    font-size: 50px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
 }
 header a{
     position: relative;

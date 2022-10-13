@@ -1,5 +1,5 @@
 .toastify{
-    background: rgb(41, 0, 41);
+    background: black;
     color: lightcyan;
     font-size: 20px;
     padding: 15px 10px;
@@ -7,21 +7,28 @@
 
 .login-page{
     margin: 50px auto;
-    max-width: 500px;
-    border: 1px solid rgb(41, 0, 41);
+    max-width: 700px;
+    border: 3px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max-content;
 }
 
 .login-page form h2{
     text-align:center;
-    font-family: 'Aboreto', cursive;
+    font-family: 'Staatliches', cursive;
+    font-size: 35px;
+    font-weight: bolder;
 }
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:  rgb(41, 0, 41);
+    color: black;
 }
 
 .login-page form input{
@@ -33,18 +40,19 @@
     height: 40px;
     margin: 10px 0;
     padding: 0 5px;
-    border: 1px solid  rgb(41, 0, 41);
+    border: 1px dashed black;
 }
 
 .login-page form button{
-    color:  rgb(41, 0, 41);
+    color:  white;
     border-radius: 10px;
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
+    background-color: black;
 }
 
 .login-page form button:hover{
-    background-color:  rgb(41, 0, 41);
+    background-color: gray;
     color: white;
 }
 
@@ -52,5 +60,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+}
+.row > a{
+    color: black;
+}
+
+.imagesL{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

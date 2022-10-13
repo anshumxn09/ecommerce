@@ -56,6 +56,7 @@ const Header = () => {
         </div>
 
         <div className="logo">
+          <img src="https://res.cloudinary.com/anshumxn09/image/upload/v1665668170/test/logo_naswdz.jpg" alt="" height={55}/>
           <h1>
             <Link to={"/"}>{isAdmin ? "UK-Admin" : "UrbanKing"}</Link>
           </h1>
