@@ -6,7 +6,7 @@ const Dcard = (props) => {
     <div className='cardD'>
         <div className="pupleHaze">
             <div className="imageD">
-                <img src="https://res.cloudinary.com/anshumxn09/image/upload/v1664981087/test/radiuspic_vbdveu.jpg" alt="" />
+                <img src={props.details.url} alt="" />
             </div>
         </div>
         <div className="aboutD">

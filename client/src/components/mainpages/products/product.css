@@ -145,8 +145,10 @@
     background: url('https://res.cloudinary.com/anshumxn09/image/upload/v1665669128/test/vansh_qbc93q.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border: 2px dashed black;
+    border: 2px solid black;
     animation: changeBG 10s linear infinite;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2),
+                0 6px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* @keyframes changeBG {
