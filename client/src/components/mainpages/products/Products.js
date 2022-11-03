@@ -64,9 +64,6 @@ const Products = () => {
   };
   return (
     <>
-    <div className="imagesC">
-      <div className="getImage"></div>
-    </div>
     <Filter/>
       {isAdmin ? (
         <div className="delete_all">
